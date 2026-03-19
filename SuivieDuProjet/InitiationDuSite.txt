@@ -1,0 +1,4 @@
+Il faut aller sur php my admin puis sur importer le fichier qui s'appelle créationtable.sql
+Ensuite, il faut mettre le fichier projet dans xamp/htdocs/NomDuFichier
+Puis il ne reste plus qu'à le lancer depuis un contrôleur. Par exemple Accueil.php.
+Il est également possible de se connecter au site alwaysData avec les codes contenue dans '../conf/projet. Ini', car une BD y est déjà installée.

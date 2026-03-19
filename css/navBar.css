@@ -1,0 +1,27 @@
+/* Style de la barre de navigation */
+.navbar{
+    background-color: #ffffff;
+    min-height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+/* Style du logo */
+.logo img {
+    width: auto; 
+    height: 50px; 
+}
+
+/* Style des icônes de la barre de navigation */
+.navbar a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #333; /* Couleur des icônes */
+    margin: 0 10px; /* Ajouter un espacement entre les icônes */
+    font-size: 30px; /* Taille des icônes */
+}
+
+/* Style des liens de la barre de navigation */
+.navbar a:hover {
+    color: #007bff; /* Changer la couleur des icônes au survol */
+}

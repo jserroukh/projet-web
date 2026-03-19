@@ -1,0 +1,29 @@
+<?php 
+
+require_once '../model/Connexion.php';
+require_once '../class/Formation.php';
+require_once '../model/FormationModel.php';
+
+$cnx = new Connexion;
+$pdo = $cnx->seConnecter("../conf/projet.ini");
+
+
+$formationId = filter_input(INPUT_POST, "formation_id");
+
+
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+if (isset($_SESSION['type'])) {
+
+    $model = new FormationModel($pdo);
+
+    $formations = $model->getFormationById($pdo,$formationId);
+
+    include '../vue/AjoutAvis.php';
+} else {
+    $message = " Il faut se connecter pour pouvoir faire des commentaires<br>";
+    include '../controleur/Accueil.php';
+}
+

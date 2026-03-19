@@ -1,0 +1,59 @@
+Table "utilisateur" :
+
+Raison de création : Cette table stocke les informations des utilisateurs qui s'inscrivent sur le site.
+Colonnes :
+id_utilisateur : Identifiant unique auto-incrémenté pour différencier les utilisateurs.
+pseudo : Nom d'utilisateur unique pour l'identification.
+mdp : Mot de passe pour l'authentification.
+type_utilisateur : Type d'utilisateur, par exemple, administrateur, vendeur ou utilisateur(client).
+
+
+Table "formation" :
+
+Raison de création : Cette table stocke les informations sur les formations (notre produit) proposées sur les site.
+Colonnes :
+id_formation : Identifiant unique auto-incrémenté pour différencier les formations.
+nom_formation : Nom de la formation.
+prix_formation : Prix de la formation.
+informations_formation : Informations supplémentaires sur la formation, comme l'adresse e-mail du vendeur, ou lien vers des class virtuelle.
+img_formation : Champ BLOB pour stocker l'image de la formation.
+id_utilisateur : Clé étrangère liant la formation au vendeur qui l'a créée.
+categorie_formation : Catégorie à laquelle la formation appartient.
+
+
+Table "panier" :
+
+Raison de création : Cette table gère les informations sur les formations ajoutées au panier par les utilisateurs.
+Colonnes :
+id_panier : Identifiant unique auto-incrémenté pour différencier les éléments du panier.
+id_utilisateur : Identifiant de l'utilisateur dont le panier est concerné.
+id_formation : Identifiant de la formation ajoutée au panier.
+
+
+Table "commande" :
+
+Raison de création : Cette table enregistre les commandes passées par les utilisateurs sur votre site.
+Colonnes :
+id_commande : Identifiant unique auto-incrémenté pour différencier les commandes.
+id_utilisateur : Identifiant de l'utilisateur qui a passé la commande.
+date_commande : Date et heure à laquelle la commande a été passée.
+id_formation : Identifiant de la formation commandée.
+
+
+Table "signalement" :
+
+Raison de création : Cette table enregistre les signalements faits par les utilisateurs sur les formations.
+Colonnes :
+id_signalement : Identifiant unique auto-incrémenté pour différencier les signalements.
+id_formation : Identifiant de la formation signalée.
+texte_signalement : Champ permettant de fournir des informations sur les raisons du signalement. (aides les Admins).
+
+
+Table "commentaire" :
+
+Raison de création : Cette table enregistre les commentaires laissés par les utilisateurs sur les formations.
+Colonnes :
+id_commentaire : Identifiant unique auto-incrémenté pour différencier les commentaires.
+texte_commentaire : Contenu du commentaire.
+id_formation : Identifiant de la formation sur laquelle le commentaire est laissé.
+id_utilisateur : Identifiant de l'utilisateur qui a laissé le commentaire.

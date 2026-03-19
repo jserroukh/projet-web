@@ -1,0 +1,108 @@
+li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+img {
+    flex: 0 0 200px; /* La largeur de l'image est fixée à 200px */
+    margin-right: 20px;
+    width: 50%;
+}
+
+.formation-info {
+    flex: 1; /* Les informations de la formation occupent tout l'espace disponible */
+    margin-right: 30px;
+}
+
+.formation-details {
+    background-color: #f9f9f9; /* Couleur de fond de la boîte d'informations */
+    padding: 10px; /* Espacement intérieur de la boîte */
+    border: 1px solid #ddd; /* Bordure */
+    border-radius: 5px; /* Arrondi des coins */
+}
+
+.formation-name {
+    font-weight: bold; /* Mise en valeur du nom de la formation */
+    font-size: 1.2em; /* Taille de police légèrement plus grande */
+    margin-bottom: 10px; /* Espacement en bas */
+}
+
+.add-to-cart-btn {
+    margin-top: 10px;
+    background-color: #4CAF50; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Arrondi des coins */
+    cursor: pointer; /* Changement du curseur au survol */
+    font-size: 16px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049; /* Couleur de fond du bouton au survol */
+}
+
+
+.signalement-btn {
+    margin-top: 10px;
+    background-color: #af4c4c; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Arrondi des coins */
+    cursor: pointer; /* Changement du curseur au survol */
+    font-size: 16px;
+}
+
+.signalement-btn:hover {
+    background-color: #a04545; /* Couleur de fond du bouton au survol */
+}
+
+
+
+.search-btn {
+    margin-top: 10px;
+    background-color: #4ea0e3; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Arrondi des coins */
+    cursor: pointer; /* Changement du curseur au survol */
+    font-size: 16px;
+
+    height: 40px; /* Hauteur fixe du bouton de recherche */
+    padding: 10px 20px; /* Espacement intérieur du bouton de recherche */
+}
+
+.search-btn:hover {
+    background-color: #28608c; /* Couleur de fond du bouton au survol */
+}
+
+
+.Avis-btn {
+    margin-top: 10px;
+    background-color: #4ea0e3; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Arrondi des coins */
+    cursor: pointer; /* Changement du curseur au survol */
+    font-size: 16px;
+
+    height: 40px; /* Hauteur fixe du bouton de recherche */
+    padding: 10px 20px; /* Espacement intérieur du bouton de recherche */
+}
+
+.Avis-btn:hover {
+    background-color: #28608c; /* Couleur de fond du bouton au survol */
+}
+
+
+.search-input {
+    width: 300px;
+    height: 20px; /* Hauteur fixe de la barre de recherche */
+    padding: 10px; /* Espacement intérieur de la barre de recherche */
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
